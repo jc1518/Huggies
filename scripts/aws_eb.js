@@ -125,9 +125,9 @@ module.exports = function(robot){
 	}
 
 	// If you want to exclude some environment from Huggies
-	// for examle, any environment with prod in the name
+	// for examle, any environment with -prod in the name
 	function isProd(myEnv,callback){
-		if(myEnv.indexOf('prod') > -1){
+		if(myEnv.indexOf('-prod') > -1){
 			callback(true);
 		}
 		else{
