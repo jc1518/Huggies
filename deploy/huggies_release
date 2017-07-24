@@ -1,0 +1,27 @@
+# Sample release script that runs on EC2
+#!/bin/bash -e
+
+# Setup environment variables
+source /home/ec2-user/huggies/lib/envvars
+
+# Download latest code from bucket
+echo "Downloading code..."
+aws --profile $AWS_PROFILE --region $AWS_REGION s3 sync s3://$AWS_BUCKET /home/ec2-user/huggies/
+
+# Sync schedule
+#sudo chmod a+x /var/spool/cron/
+#aws --profile $AWS_PROFILE s3 sync s3://$AWS_BUCKET/schedule /var/spool/cron/ec2-user
+
+# Check pid
+PID=`ps aux | grep hubot | grep -v grep | awk {'print $2'}`
+echo "Current Huggies PID is $PID"
+
+# Restart
+if [ "$PID" != "" ]; then echo "Stopping Huggies..."; kill $PID; fi
+echo "Starting Huggies..."
+cd /home/ec2-user/huggies/
+npm install
+chmod a+x bin/hubot
+chmod a+x scripts/*.sh
+chmod a+x deploy/*
+bash bin/hubot --adapter slack >> huggies.log &

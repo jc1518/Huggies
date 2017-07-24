@@ -1,0 +1,16 @@
+{
+  "name": "Huggies",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "github/jc1518/huggies",
+  "author": "Chen, Jackie <support@jackiechen.org>",
+  "description": "A simple helpful robot for you",
+  "dependencies": {
+    "aws-sdk": "latest",
+    "bcrypt-nodejs": "latest",
+    "child_process": "latest",
+    "hubot": "latest",
+    "hubot-slack": "latest",
+    "request": "latest"
+  }
+}

@@ -1,0 +1,21 @@
+# Environment variables
+
+# Huggies
+export HUGGIES_PASSWORD='my-huggies-password'
+
+# AWS 
+export AWS_PROFILE="my-aws-profile"
+export AWS_REGION="my-aws-region"
+export AWS_BUCKET='my-aws-bucket'
+export AWS_ACCOUNT_ID='my-aws-account-id'
+
+# Slack
+export HUBOT_SLACK_TOKEN="my-slack-token"
+export SLACK_CHANNEL="my-slack-channel"
+
+# CloudHealth
+export CLOUDHEALTH_API_KEY="my-cloudhealth-api-key"
+
+# Opsgenie
+export OPSGENIE_SCHEDULE="my-team-schedule"
+export OPSGENIE_API_KEY="my-opsgenie-api-key"
