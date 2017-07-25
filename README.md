@@ -2,7 +2,7 @@
 
 ## Overview
 
-Huggies is a side proejct that I started when working for the NAPI team which prounced as ['næpɪ], and that is why I named it as Huggies ;) 
+Huggies is a side project that I started when working for the NAPI team which pronounced as ['næpɪ], and that is why I named it as Huggies ;) 
 
 The team's environments are mostly on AWS Elastic Beanstalk. In general, Elastic Beanstalk is a good tool as it abstracts the complexicity of managing Elastic Load Balancer, Autoscaling group, Route 53 etc. It allows developers to focus on the codes, instead of worrying much about the running environments. But there were still a few pain points that I observed the team was sufferring:
 
