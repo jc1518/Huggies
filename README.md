@@ -12,9 +12,9 @@ The team's environments are mostly on AWS Elastic Beanstalk. In general, Elastic
 
 Huggies is built on Hubot framework, it is a plug and play tool which solves the above the pain points.     
 
-Watch the video demo if you are interested.
-[demo part 1](https://youtu.be/_urUn_5jX6c)
-[demo part 2](https://youtu.be/GROXO9n32kk)
+Watch the two video demo if you are interested:   
+<video>(https://youtu.be/_urUn_5jX6c)</video>   
+<video>(https://youtu.be/GROXO9n32kk)</video>    
 
 ## Design
 ![huggies](design/huggies-design.png)
